@@ -7,8 +7,8 @@ let transporter = nodemailer.createTransport({
     port: 587,
     secure: false, // true for 465, false for other ports
     auth: {
-    user: "dummy.fajal@gmail.com",
-    pass: "zycnvxgvqaqumtlo"
+    user: "sitanshu@difmlaw.com",
+    pass: "szpznjexlfsldciu"
     },
   });
   
@@ -17,8 +17,8 @@ let transporter = nodemailer.createTransport({
     console.log(email, message);
   
     var mailOptions = {
-      from: '"Admin 👻" <dummy.fajal@gmail.com>',
-      to: "dummy.fajal@gmail.com",
+      from: '"Admin 👻" <sitanshu@difmlaw.com>',
+      to: "sitanshu@difmlaw.com",
       subject: "New Contact Us Inquiry from DIFM Law Portal",
       html: `Dear Admin,<br><br>A new inquiry has been submitted through the Contact Us form on the DIFM Law portal.<br><br>Sender's Email: ${email}<br>Message: ${message}<br><br>Please review and respond to this inquiry promptly to address any concerns or provide<br>necessary assistance.<br><br>Thank you for your attention to this matter.<br><br>Best regards,<br><b>Fazal Ansari,</b><br>Project Coordinator<br>Team <a href="https://www.difm.llc"><b>DIFM LAW</b></a><br>A unit of <a href="https://www.difmlaw.com"><b>DO IT FOR ME LLC.</b></a>`,
     };
@@ -37,8 +37,8 @@ let transporter = nodemailer.createTransport({
     console.log(email, username, message);
   
     var mailOptions = {
-      from: '"user 👻" <dummy.fajal@gmail.com>',
-      to: "dummy.fajal@gmail.com",
+      from: '"user 👻" <sitanshu@difmlaw.com>',
+      to: "sitanshu@difmlaw.com",
       subject: "New Contact Us Inquiry from DIFM Law Portal",
       html: `Dear Admin,<br><br>A new inquiry has been submitted through the Contact Us form on the DIFM Law portal.<br><br>Sender's Email: ${email}<br>Name: ${username}<br>Message: ${message}<br><br>Please review and respond to this inquiry promptly to address any concerns or provide<br>necessary assistance.<br><br>Thank you for your attention to this matter.<br><br>Best regards,<br><b>Fazal Ansari,</b><br>Project Coordinator<br>Team <a href="https://www.difm.llc"><b>DIFM LAW</b></a><br>A unit of <a href="https://www.difmlaw.com"><b>DO IT FOR ME LLC.</b></a>`,
     
@@ -120,8 +120,8 @@ let transporter = nodemailer.createTransport({
     console.log(name, email, password, lawyer_id);
   
     var mailOptions = {
-      from: '"user 👻" <dummy.fajal@gmail.com>',
-      to: "dummy.fajal@gmail.com",
+      from: '"user 👻" <sitanshu@difmlaw.com>',
+      to: "sitanshu@difmlaw.com",
       subject: "Confirmation - Lawyer Profile Successfully Added on DIFM Law",
       html: `Dear Admin,<br><br>This is to inform you that a new lawyer profile has been successfully added to DIFM Law:<br><br><b>Lawyer Name:</b> ${name}<br><b>Profile Link:</b> http://localhost:3000/job/${lawyer_id}<br><br>Best regards,<br><b>Fazal Ansari,</b><br>Project Coordinator<br>Team <a href="https://www.difm.llc"><b>DIFM LAW</b></a><br>A unit of <a href="https://www.difmlaw.com"><b>DO IT FOR ME LLC.</b></a>`,
     
