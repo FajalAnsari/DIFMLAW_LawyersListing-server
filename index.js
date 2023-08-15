@@ -14,6 +14,11 @@ app.use("/email", emailRoutes);
 app.use("/emails", emailRoutes);
 app.use("/emailss", emailRoutes);
 app.use("/emailsss", emailRoutes);
+app.use("/emailsssa", emailRoutes);
+app.use("/emailsssadmin", emailRoutes);
+app.use("/emailslawsign", emailRoutes);
+app.use("/emailsusersign", emailRoutes);
+
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
